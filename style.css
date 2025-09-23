@@ -9,3 +9,15 @@ img {
   height: auto;
   display: block;
 }
+
+/* Forside */
+
+/* Produktliste */
+
+.produktliste_container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* Produkt */
