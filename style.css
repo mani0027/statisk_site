@@ -11,11 +11,32 @@ img {
 }
 
 /* Forside */
+
+.baggrundsfarve {
+  background-color: blanchedalmond;
+}
+
+.h2_index {
+  margin-left: 7rem;
+  font-size: 4rem;
+  margin-top: 4rem;
+}
 .categorylist {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
-  margin: 50px;
+  margin: 7rem;
+  border-radius: 30px;
+}
+
+.categorylist a {
+  background-color: #5b0c21;
+  border-radius: 20px;
+  color: #fef4ea;
+  padding: 2.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
 }
 
 /* Produktliste */
@@ -23,8 +44,41 @@ img {
 .produktliste_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  gap: 30px;
+  padding: 5rem;
+  background-color: blanchedalmond;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+article {
+  background-color: #e8a7b8;
   padding: 1rem;
+}
+
+img {
+  margin-bottom: 1rem;
+}
+
+#udsolgt {
+  filter: grayscale(99%);
+  opacity: 50%;
+}
+
+.sold_out {
+  position: relative;
+  display: inline-block;
+}
+
+.udsolgt_tekst {
+  position: absolute;
+  color: red;
+  font-size: 55px;
+  top: 130px;
+  left: 75px;
+  transform: rotate(20deg);
 }
 
 /* Produkt */
