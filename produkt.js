@@ -1,6 +1,9 @@
 console.log("side loaded");
 
-const id = 1525;
+const id = new URLSearchParams(window.location.search).get("id");
+
+// console.log("id:", id);
+
 const productUrl = "https://kea-alt-del.dk/t7/api/products/" + id;
 const produkt = document.querySelector(".produkt");
 
@@ -25,10 +28,6 @@ function show(data) {
  <p> Underkategori: ${data.subcategory} </p>
  <p> Farve: ${data.basecolour} </p>
  <p> Årstid: ${data.season} </p>
- <p> Køn: ${data.gender} </p>
- 
-
-
- 
+ <p> Køn: ${data.gender} </p> 
 `;
 }
